@@ -26,7 +26,7 @@ const onSubmit = async (e) => {
     email: userData.email, // required
     password: userData.password, // required
     rememberMe: true,
-    callbackURL: "/",
+    callbackURL: "/dashboard",
   });
   console.log("sign in res", { data, error });
   if (error) {
